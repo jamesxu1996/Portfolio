@@ -76,7 +76,7 @@ section {
   background-color: var(--text-primary);
   -webkit-transition: width 200ms ease;
   transition: width 200ms ease;
-  z-index: 1000;
+  z-index: 3;
 }
 
 .navbar-nav {

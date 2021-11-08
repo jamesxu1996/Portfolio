@@ -24,7 +24,7 @@ body {
     padding: 0;
 }
 
-//relative rem setting for section content, relative to font size px set in root directory 
+//relative rem setting for section content, relative to font size px set in root directory. added to make space for fixed side navbar to not overlap main content
 section {
     margin-left: 5rem;
     padding: 1rem;
@@ -41,9 +41,13 @@ section {
     text-align: center;  
 }
 
-//Setting size for landing header text
+//Customise landing header text and graphic section
 .landing-header {
     font-size: 5vw;
+    background-image: url(../Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 //Hover effect for icons

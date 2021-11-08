@@ -30,9 +30,9 @@ section {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #a8c8e6;
   color: black;
   text-align: center;
+  background-color: gray;
 }
 
 .landing-header {
@@ -76,7 +76,7 @@ section {
   background-color: var(--text-primary);
   -webkit-transition: width 200ms ease;
   transition: width 200ms ease;
-  z-index: 1000;
+  z-index: 3;
 }
 
 .navbar-nav {

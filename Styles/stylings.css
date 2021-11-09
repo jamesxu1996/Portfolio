@@ -47,6 +47,13 @@ section {
   background-size: cover;
 }
 
+.profile-img {
+  max-width: 100%;
+  max-height: 300px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;

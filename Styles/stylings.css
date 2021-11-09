@@ -2,7 +2,7 @@
 :root {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  --text-primary: rgb(235, 228, 135);
+  --text-primary: rgb(211, 134, 45);
   --text-secondary: rgb(233, 169, 67);
   --bg-primary: rgb(66, 76, 249);
   --bg-secondary: rgb(18, 0, 108);
@@ -13,6 +13,8 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: var(--text-primary);
+  padding-top: 1.5rem;
+  margin: 0;
 }
 
 body {
@@ -37,12 +39,33 @@ section {
   background-color: var(--text-primary);
 }
 
-.landing-header {
+.header {
   font-size: 5vw;
   background-image: url(../Images/background1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  background-color: var(--bg-primary);
+  margin: 1.5rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: -0.5rem -0.5rem var(--white);
+          box-shadow: -0.5rem -0.5rem var(--white);
 }
 
 .fa:hover {

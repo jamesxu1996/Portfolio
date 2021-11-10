@@ -315,6 +315,18 @@ body::-webkit-scrollbar-thumb {
   background: black;
 }
 
+.popup::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.popup::-webkit-scrollbar-track {
+  background: var(--text-primary);
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: black;
+}
+
 .shadow-pop-tr {
   -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
           animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;

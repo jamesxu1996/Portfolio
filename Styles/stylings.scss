@@ -246,7 +246,7 @@ section {
     width: 10rem;
 }
 
-//Styling for scrollbar
+//Styling for main scrollbar
 body::-webkit-scrollbar {
     width: 0.7rem;
 }
@@ -256,6 +256,19 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
+    background: black
+}
+
+//Styling for popup scrollbar
+.popup::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+.popup::-webkit-scrollbar-track {
+    background:var(--text-primary)
+}
+
+.popup::-webkit-scrollbar-thumb {
     background: black
 }
 

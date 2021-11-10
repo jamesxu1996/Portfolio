@@ -97,7 +97,16 @@
         <a class="exit-popup" href="#">&times;</a>
         <div class="flex-container">
             <div>
-         FORM
+                <form action="mailto:test@example.com" method="post" enctype="text/plain">
+                    <p>Name:</p><br>
+                    <input type="text" name="name"><br>
+                    <p>Email:</p><br>
+                    <input type="text" name="email"><br>
+                    <p>Message:</p><br>
+                    <input type="text" name="comment" size="55"><br><br>
+                    <input type="submit" value="send">
+                    <input type="reset" value="reset">
+                </form>
             </div>
         </div>
     </div>

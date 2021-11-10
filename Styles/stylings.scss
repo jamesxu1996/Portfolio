@@ -45,6 +45,11 @@ section {
     background-color: var(--text-primary);
 }
 
+//Hover effect for footer
+.footer:hover {
+    opacity: 0.7;
+}
+
 a {
     text-decoration: none;
     color: var(--black);
@@ -251,7 +256,9 @@ a {
 
 .navbar:hover {
     width: 10rem;
+    opacity: 0.7;
 }
+
 
 //Styling for main scrollbar
 body::-webkit-scrollbar {

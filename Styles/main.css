@@ -50,14 +50,22 @@ section {
 .profile-img {
   max-width: 100%;
   max-height: 300px;
-  border-radius: 50%;
   -webkit-clip-path: circle();
           clip-path: circle();
-  -webkit-box-shadow: 0 0 50px whitesmoke;
-          box-shadow: 0 0 50px whitesmoke;
 }
 
-.container {
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +79,12 @@ section {
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background-color: var(--bg-primary);
   margin: 1.5rem;
   padding: 0.5rem;
@@ -227,8 +241,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-pop-right {
-  -webkit-animation: text-shadow-pop-right 0.6s both;
-          animation: text-shadow-pop-right 0.6s both;
+  -webkit-animation: text-shadow-pop-right 0.4s both;
+          animation: text-shadow-pop-right 0.4s both;
 }
 
 @-webkit-keyframes text-shadow-pop-right {

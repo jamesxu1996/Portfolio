@@ -45,9 +45,10 @@ section {
     background-color: var(--text-primary);
 }
 
-//Hover effect for footer
-.footer:hover {
+//Hover effect for back to top button
+#topbutton:hover {
     opacity: 0.7;
+    color: var(--white)
 }
 
 a {

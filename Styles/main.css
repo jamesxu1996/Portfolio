@@ -39,8 +39,9 @@ section {
   background-color: var(--text-primary);
 }
 
-.footer:hover {
+#topbutton:hover {
   opacity: 0.7;
+  color: var(--white);
 }
 
 a {

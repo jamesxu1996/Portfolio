@@ -39,6 +39,11 @@ section {
   background-color: var(--text-primary);
 }
 
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
 .header {
   font-size: 5vw;
   background-image: url(../Images/background1.jpg);
@@ -262,12 +267,6 @@ section {
   color: var(--text-primary);
 }
 
-form {
-  max-width: 50px !important;
-  max-height: 300px !important;
-  font-size: 16px !important;
-}
-
 .navbar {
   text-decoration: none;
   width: 5rem;
@@ -408,31 +407,31 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 575px) {
   .content {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 576px) {
   .content {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .content {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .content {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=main.css.map */

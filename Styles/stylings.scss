@@ -45,6 +45,11 @@ section {
     background-color: var(--text-primary);
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 //Customise header text and graphic section
 .header {
     font-size: 5vw;
@@ -209,12 +214,6 @@ section {
     color: var(--text-primary)
 }
 
-form {
-    max-width: 50px !important;
-    max-height: 300px !important;
-    font-size: 16px !important;
-}
-
 //Styling for Navbar (z-index for always on top)
 .navbar {
     text-decoration: none;
@@ -315,30 +314,30 @@ body::-webkit-scrollbar-thumb {
 //Responsive Media Queries
 //Extra Small Devices
 @media screen and (max-width: 575px) {
-    .content {font-size: 16px; }
+    .content {font-size: 14px; }
 
 }
 
 //Small Devices
 @media screen and (min-width: 576px) {
-    .content {font-size: 16px; }
+    .content {font-size: 15px; }
 
 }
 
 //Medium Devices
 @media screen and (min-width: 768px) {
-    .content {font-size: 17px; }
+    .content {font-size: 16px; }
 
 }
 
 //Large Devices
 @media screen and (min-width: 992px) {
-    .content {font-size: 19px; }
+    .content {font-size: 17px; }
 
 }
 
 ///Extra Large Devices
 @media screen and (min-width: 1200px) {
-    .content {font-size: 19px; }
+    .content {font-size: 18px; }
 
 }

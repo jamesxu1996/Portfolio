@@ -253,6 +253,10 @@ a {
     font-weight: 900;
 }
 
+.nav-item {
+    padding-top: 3vh;
+}
+
 .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     color: var(--text-primary);

@@ -321,6 +321,10 @@ a {
   font-weight: 900;
 }
 
+.nav-item {
+  padding-top: 3vh;
+}
+
 .nav-link:hover {
   -webkit-filter: grayscale(0%) opacity(1);
           filter: grayscale(0%) opacity(1);

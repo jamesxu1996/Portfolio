@@ -13,7 +13,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: var(--text-primary);
-  padding-top: 1.5rem;
+  padding-top: 1.5vw;
   margin: 0;
 }
 
@@ -49,7 +49,7 @@ section {
 
 .profile-img {
   max-width: 100%;
-  max-height: 300px;
+  max-height: 30vw;
   -webkit-clip-path: circle();
           clip-path: circle();
 }
@@ -104,7 +104,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 30rem;
+  margin-left: 25vw;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -119,8 +119,8 @@ section {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  margin-left: 25vw;
+  margin-right: 25vw;
 }
 
 .content {
@@ -128,8 +128,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   background-color: var(--bg-primary);
-  margin: 1.5rem;
-  padding: 0.5rem;
+  margin: 3vw;
+  padding: 2vw;
   -webkit-box-shadow: -0.5rem -0.5rem var(--white);
           box-shadow: -0.5rem -0.5rem var(--white);
 }
@@ -168,7 +168,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2vw;
 }
 
 .fa.fa-github {
@@ -184,7 +184,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2vw;
 }
 
 .fa.fa-envelope {
@@ -200,7 +200,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2vw;
 }
 
 .popup-overlay {
@@ -222,33 +222,37 @@ section {
 }
 
 .popup {
-  margin: 5rem auto;
-  padding-bottom: 10rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  margin: 10vw auto;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
   background: var(--bg-primary);
   border-radius: 10%;
-  width: 20%;
+  max-width: 30%;
   position: relative;
   -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
-  max-height: 30%;
+  max-height: 50%;
   overflow: auto;
+}
+
+.popup-content {
+  font-size: 16px;
 }
 
 .popup h6 {
   margin-top: 0;
-  font-size: 10rem;
+  font-size: 6vw;
   color: var(--text-primary);
 }
 
 .exit-popup {
   position: absolute;
-  top: 2rem;
-  right: 3rem;
+  top: 2vw;
+  right: 3vw;
   -webkit-transition: all 150ms;
   transition: all 150ms;
-  font-size: 3rem;
+  font-size: 6vw;
   font-weight: bold;
   text-decoration: none;
   color: var(--black);
@@ -256,6 +260,12 @@ section {
 
 .exit-popup:hover {
   color: var(--text-primary);
+}
+
+form {
+  max-width: 50px !important;
+  max-height: 300px !important;
+  font-size: 16px !important;
 }
 
 .navbar {
@@ -279,7 +289,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem;
+  padding: 2.5vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -287,7 +297,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 2rem;
+  height: 2.5vw;
   color: var(--white);
   text-decoration: none;
   -webkit-transition: 300ms;
@@ -393,6 +403,36 @@ body::-webkit-scrollbar-thumb {
     text-shadow: 0.5px 0 black, 1px 0 black, 1.5px 0 black, 2px 0 black, 2.5px 0 black, 3px 0 black, 3.5px 0 black, 4px 0 black;
     -webkit-transform: translateX(-8px);
             transform: translateX(-8px);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    font-size: 19px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -152,6 +152,61 @@ section {
     padding: 1rem;
 }
 
+//Email icon contact me popup styling
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 550ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 5rem auto;
+    padding: 10rem;
+    background: var(--bg-primary);
+    border-radius: 10%;
+    width: 20%;
+    position: relative;
+    transition: all 4s ease-in-out;
+    max-height: 10%;
+    overflow: auto;
+}
+
+.popup h6 {
+    margin-top: 0;
+    color: var(--text-primary)
+}
+
+.exit-popup {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    transition: all 150ms;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.exit-popup:hover {
+    color: var(--text-primary)
+}
+
+// .popup .content {
+//     max-height: 40%;
+//     overflow: auto;
+// }
+
 //Styling for Navbar (z-index for always on top)
 .navbar {
     text-decoration: none;

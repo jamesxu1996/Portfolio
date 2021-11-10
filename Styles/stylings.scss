@@ -172,18 +172,21 @@ section {
 
 .popup {
     margin: 5rem auto;
-    padding: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     background: var(--bg-primary);
     border-radius: 10%;
     width: 20%;
     position: relative;
     transition: all 4s ease-in-out;
-    max-height: 10%;
+    max-height: 30%;
     overflow: auto;
 }
 
 .popup h6 {
     margin-top: 0;
+    font-size: 10rem;
     color: var(--text-primary)
 }
 

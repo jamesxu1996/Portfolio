@@ -14,8 +14,15 @@
 }
 
 //Section Stylings
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     font-weight: bold;
+    color: var(--text-primary);
+    padding-top: 1.5vw;
+    margin: 0;
+}
+
+h6 {
+    font-style: italic;
     color: var(--text-primary);
     padding-top: 1.5vw;
     margin: 0;
@@ -24,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 p {
     padding: 1vw;
     
+}
+
+.blog-img {
+    padding: 1.5vw;
 }
 
 body {
@@ -220,14 +231,6 @@ a {
     justify-content: center;
 }
 
-.popup h6 {
-    margin-top: 0;
-    font-size: 1vw;
-    color: var(--text-primary);
-    display: flex;
-    justify-content: center;
-}
-
 .exit-popup {
     position: absolute;
     top: 2vw;
@@ -284,7 +287,25 @@ a {
 
 .navbar:hover {
     width: 10rem;
-    opacity: 0.7;
+    opacity: 0.85;
+}
+
+//Styling for Blog page links
+.blog-link {
+    display: flex;
+    padding: 1.5vw;
+    flex-direction: column;
+    align-items: center;
+    height: 1.5vw;
+    color: var(--white);
+    text-decoration: none;
+    transition: 300ms;
+    font-weight: 900;
+}
+
+.blog-link:hover {
+    filter: grayscale(0%) opacity(1);
+    color: var(--text-primary);
 }
 
 //Styling for main scrollbar

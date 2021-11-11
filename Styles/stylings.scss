@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+p {
+    padding: 1vw;
+    
+}
+
 body {
     color: var(--white);
     background-color: var(--bg-secondary);
@@ -63,6 +68,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    z-index: 2;
 }
 
 //profile photo
@@ -86,6 +92,13 @@ a {
 .flex-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
@@ -114,11 +127,26 @@ a {
 }
 
 .content {
-    display: flex;
     background-color: var(--bg-primary);
     margin: 3vw;
     padding: 2vw;
     box-shadow: -0.5rem -0.5rem var(--white);
+}
+
+#left {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 40%;
+}
+
+#right {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 40%;
 }
 
 //Hover effect for icons
@@ -267,7 +295,6 @@ a {
     width: 10rem;
     opacity: 0.7;
 }
-
 
 //Styling for main scrollbar
 body::-webkit-scrollbar {

@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+p {
+  padding: 1vw;
+}
+
 body {
   color: var(--white);
   background-color: var(--bg-secondary);
@@ -55,6 +59,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 2;
 }
 
 .profile-img {
@@ -85,6 +90,21 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -134,14 +154,41 @@ a {
 }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: var(--bg-primary);
   margin: 3vw;
   padding: 2vw;
   -webkit-box-shadow: -0.5rem -0.5rem var(--white);
           box-shadow: -0.5rem -0.5rem var(--white);
+}
+
+#left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 40%;
+}
+
+#right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 40%;
 }
 
 .fa:hover {

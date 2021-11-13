@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
+li {
+    padding: 1vw;
+}
+
 h6 {
     font-style: italic;
     color: var(--text-primary);
@@ -155,7 +159,6 @@ a {
 
 #left {
     display: flex;
-    flex-flow: row wrap;
     flex-direction: column;
     align-self: flex-start;
     width: 40%;
@@ -163,7 +166,6 @@ a {
 
 #right {
     display: flex;
-    flex-flow: row wrap;
     flex-direction: column;
     align-self: flex-start;
     width: 40%;
@@ -392,6 +394,13 @@ body::-webkit-scrollbar-thumb {
 
 //Responsive Media Queries
 //Extra Small Devices
+@media screen and (max-width: 574px) {
+    // .flex-container {}
+    .flex-container-left {max-height: 100%;max-width:100%;}
+    .flex-container-mid {margin-left: 0vw; margin-right: 0vw; }
+    .flex-container-right {max-height: 100%;max-width:100%;}
+}
+
 @media screen and (max-width: 575px) {
     .content {font-size: 14px; }
     .popup-content {font-size: 10px;}
@@ -405,6 +414,7 @@ body::-webkit-scrollbar-thumb {
     .popup-content {font-size: 11px; }
     .popup h6 {font-size: 11px;}
     input {width: 100%; box-sizing: border-box;}
+    .flex-container-mid {margin-left: 0vw; margin-right: 0vw; }
 }
 
 //Medium Devices
@@ -413,6 +423,7 @@ body::-webkit-scrollbar-thumb {
     .popup-content {font-size: 12px; }
     .popup h6 {font-size: 12px;}
     input {width: 100%; box-sizing: border-box;}
+    .flex-container-mid {margin-left: 15vw; margin-right: 15vw; }
 }
 
 //Large Devices
@@ -421,6 +432,7 @@ body::-webkit-scrollbar-thumb {
     .popup-content {font-size: 13px; }
     .popup h6 {font-size: 13px;}
     input {width: 100%; box-sizing: border-box;}
+    .flex-container-mid {margin-left: 20vw; margin-right: 20vw; }
 }
 
 ///Extra Large Devices
@@ -429,4 +441,5 @@ body::-webkit-scrollbar-thumb {
     .popup-content {font-size: 14px; }
     .popup h6 {font-size: 14px;}
     input {width: 100%; box-sizing: border-box;}
+    .flex-container-mid {margin-left: 25vw; margin-right: 25vw; }
 }

@@ -63,6 +63,11 @@ section {
   color: var(--white);
 }
 
+#download:hover {
+  opacity: 0.7;
+  color: var(--white);
+}
+
 a {
   text-decoration: none;
   color: var(--black);
@@ -364,7 +369,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 2vw;
+  height: 2vh;
   color: var(--white);
   text-decoration: none;
   -webkit-transition: 300ms;
@@ -373,14 +378,21 @@ a {
 }
 
 .nav-item {
-  padding-top: 3vh;
+  padding-top: 2vh;
+  max-width: 100%;
+}
+
+.nav-item:hover {
+  -webkit-filter: grayscale(0%) opacity(1);
+          filter: grayscale(0%) opacity(1);
+  color: var(--text-primary);
+  background: var(--bg-secondary);
 }
 
 .nav-link:hover {
   -webkit-filter: grayscale(0%) opacity(1);
           filter: grayscale(0%) opacity(1);
   color: var(--text-primary);
-  background: var(--bg-secondary);
 }
 
 .navbar:hover {

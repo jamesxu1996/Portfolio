@@ -71,6 +71,12 @@ section {
     color: var(--white)
 }
 
+//Hover effect for download button
+#download:hover {
+    opacity: 0.7;
+    color: var(--white)
+}
+
 a {
     text-decoration: none;
     color: var(--black);
@@ -288,7 +294,7 @@ a {
     padding: 1.5vw;
     flex-direction: column;
     align-items: center;
-    height: 2vw;
+    height: 2vh;
     color: var(--white);
     text-decoration: none;
     transition: 300ms;
@@ -296,19 +302,31 @@ a {
 }
 
 .nav-item {
-    padding-top: 3vh;
+    padding-top: 2vh;
+    max-width: 100%;
+}
+
+.nav-item:hover {
+    filter: grayscale(0%) opacity(1);
+    color: var(--text-primary);
+    background: var(--bg-secondary)
 }
 
 .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     color: var(--text-primary);
-    background: var(--bg-secondary)
 }
 
 .navbar:hover {
     width: 10rem;
     opacity: 0.85;
 }
+
+// //Styling for google map embed
+// .map {
+//     height: 100%;
+//     width: 100%;
+// }
 
 //Styling for Blog page links
 .blog-link {
@@ -395,7 +413,6 @@ body::-webkit-scrollbar-thumb {
 //Responsive Media Queries
 //Extra Small Devices
 @media screen and (max-width: 574px) {
-    // .flex-container {}
     .flex-container-left {max-height: 100%;max-width:100%;}
     .flex-container-mid {margin-left: 0vw; margin-right: 0vw; }
     .flex-container-right {max-height: 100%;max-width:100%;}
@@ -406,6 +423,7 @@ body::-webkit-scrollbar-thumb {
     .popup-content {font-size: 10px;}
     .popup h6 {font-size: 10px;}
     input {width: 100%; box-sizing: border-box;}
+
 }
 
 //Small Devices

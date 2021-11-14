@@ -1,6 +1,6 @@
 # My Portfolio
 
-Link to my portfolio website: 
+Link to my portfolio website: https://jamesxu-portfolio.netlify.app/
 # Description
 ## Purpose
 

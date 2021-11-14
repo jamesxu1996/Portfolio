@@ -75,7 +75,7 @@ a {
 
 .header {
   font-size: 5vw;
-  background-image: url(../Images/background1.jpg);
+  background-image: url(/docs/Images/background1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -84,7 +84,7 @@ a {
 
 .header2 {
   font-size: 5vw;
-  background-image: url(../Images/background2.jpg);
+  background-image: url(/docs/Images/background2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -93,7 +93,7 @@ a {
 
 .header3 {
   font-size: 5vw;
-  background-image: url(../Images/background3.jpg);
+  background-image: url(/docs/Images/background3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

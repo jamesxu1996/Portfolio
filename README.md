@@ -20,3 +20,5 @@ Accessibility was also accounted for in the inclusion of alt text and an easy to
 
 ## Sitemap
 ![sitemap](./docs/Images/sitemap.png)
+
+## Screenshots
